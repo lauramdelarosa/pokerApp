@@ -8,140 +8,121 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/dealingCardsButton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:background="@drawable/border"
         android:text="@string/dealing_the_cards"
+        android:textColor="@color/red"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.36" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
         app:layout_constraintEnd_toStartOf="@+id/c1"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/c1"
-        app:srcCompat="@android:drawable/ic_menu_myplaces" />
+        app:srcCompat="@drawable/hand_icon" />
 
     <TextView
         android:id="@+id/c1"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:fontFamily="sans-serif-black"
-        android:gravity="center"
-        tools:text="3"
-        android:textStyle="bold"
+        style="@style/TextAppearance"
         app:layout_constraintEnd_toStartOf="@+id/c2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/c2" />
+        app:layout_constraintTop_toTopOf="@+id/c2"
+        tools:text="3" />
 
     <TextView
         android:id="@+id/c7"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:fontFamily="sans-serif-black"
-        android:gravity="center"
-        tools:text="3"
-        android:textStyle="bold"
+        style="@style/TextAppearance"
         app:layout_constraintEnd_toStartOf="@+id/consecutive"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/c6"
-        app:layout_constraintTop_toTopOf="@+id/consecutive" />
+        app:layout_constraintTop_toTopOf="@+id/consecutive"
+        tools:text="3" />
 
     <TextView
         android:id="@+id/c4"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:fontFamily="sans-serif-black"
-        android:gravity="center"
-        tools:text="3"
-        android:textStyle="bold"
+        style="@style/TextAppearance"
         app:layout_constraintEnd_toStartOf="@+id/c5"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/c3"
-        app:layout_constraintTop_toTopOf="@+id/c5" />
+        app:layout_constraintTop_toTopOf="@+id/c5"
+        tools:text="3" />
 
     <TextView
         android:id="@+id/c3"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:fontFamily="sans-serif-black"
-        android:gravity="center"
-        tools:text="3"
-        android:textStyle="bold"
+        style="@style/TextAppearance"
         app:layout_constraintEnd_toStartOf="@+id/c4"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/c2"
-        app:layout_constraintTop_toTopOf="@+id/c4" />
+        app:layout_constraintTop_toTopOf="@+id/c4"
+        tools:text="3" />
 
     <TextView
         android:id="@+id/c5"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:fontFamily="sans-serif-black"
-        android:gravity="center"
-        tools:text="3"
-        android:textStyle="bold"
+        style="@style/TextAppearance"
         app:layout_constraintEnd_toStartOf="@+id/c6"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/c4"
-        app:layout_constraintTop_toTopOf="@+id/c6" />
+        app:layout_constraintTop_toTopOf="@+id/c6"
+        tools:text="3" />
 
     <TextView
         android:id="@+id/c6"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:fontFamily="sans-serif-black"
-        android:gravity="center"
-        tools:text="3"
-        android:textStyle="bold"
+        style="@style/TextAppearance"
         app:layout_constraintEnd_toStartOf="@+id/c7"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/c5"
-        app:layout_constraintTop_toTopOf="@+id/c7" />
+        app:layout_constraintTop_toTopOf="@+id/c7"
+        tools:text="3" />
 
     <TextView
         android:id="@+id/c2"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:fontFamily="sans-serif-black"
-        android:gravity="center"
-        tools:text="3"
-        android:textStyle="bold"
+        style="@style/TextAppearance"
         app:layout_constraintEnd_toStartOf="@+id/c3"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/c1"
-        app:layout_constraintTop_toTopOf="@+id/c3" />
+        app:layout_constraintTop_toTopOf="@+id/c3"
+        tools:text="3" />
 
     <ImageView
         android:id="@+id/consecutive"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
         android:visibility="invisible"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/c7"
         app:layout_constraintTop_toBottomOf="@+id/dealingCardsButton"
-        app:srcCompat="@android:drawable/presence_online" />
+        app:srcCompat="@drawable/check" />
 
     <ImageView
         android:id="@+id/noConsecutive"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
         android:visibility="invisible"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/c7"
         app:layout_constraintTop_toBottomOf="@+id/consecutive"
-        app:srcCompat="@android:drawable/presence_offline" />
+        app:srcCompat="@drawable/incorrect" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
